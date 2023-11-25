@@ -3,12 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Express Email Example</title>
+    <title>email-sender</title>
+    <style>
+     h1{
+        text-align: center;
+    
+     }
+     form{
+        height:40vh;
+        width:30vw;
+        border-radius:5px;
+        border:1px solid green;
+        margin-left:35vw;
+        margin-top:25vh;
+        background:white;
+     }
+     body{
+        background-color: blueviolet;
+     }
+     input{
+        height:5vh;
+        width:22vw;
+        border:1px solid green;
+        border-radius:5px;
+        margin-left:3vw;
+        margin-top:1vh;
+     }
+     label{
+        font-size:20px;
+        font-weight: bold;
+        margin-left:3vw;
+        
+     }
+     button{
+        height:5vh;
+        width:22vw;
+        border:1px solid green;
+        border-radius:5px;
+        margin-left:3vw;
+        margin-top:3vh;
+        background: blueviolet;
+        color:white;
+        font-weight:bold;
+     }
+    </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
+    
     <form action="/send-thank-you-email" method="post">
-        <label for="email">Email:</label>
+        <h1>Contact Us</h1>
+        <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required>
         <button type="submit">Submit</button>
     </form>
