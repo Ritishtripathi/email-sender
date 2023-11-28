@@ -38,7 +38,7 @@ app.post('/send-thank-you-email', async (req, res) => {
         subject: 'Thank You for Your Submission',
         html: '<h1>Thank You!</h1><p>Your message has been received.</p>'
     };
-
+    
     try {
         const info = await transporter.sendMail(mailOptions);
         console.log('Email sent:', info.response);
